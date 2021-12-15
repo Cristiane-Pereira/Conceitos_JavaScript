@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculando IMC</title>
+</head>
+<style>
+    .title {
+        color: palevioletred;
+    }
+</style>
+
+<body>
+    <center>
+        <h1 class="title">CALCULANDO MEU IMC</h1>
+    </center>
+    <center>
+        <script>
+            function mostra(valueVariavelQualquer) {
+                document.write(valueVariavelQualquer)
+                pularLinha();
+            }
+
+            function pularLinha() {
+                document.write('<br>')
+            }
+
+            function calculaImc (altura, peso) {
+                var imc = Math.round(peso / (altura * altura));
+                return imc;
+            }
+
+           var imcCristiane = calculaImc(1.55, 58);
+           var imcVitor = calculaImc(1.45, 28);
+
+           mostra("O IMC da Cristiane é: " + imcCristiane);
+           mostra("O IMC da Vitor é: " + imcVitor);
+         
+        </script>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculando IMC</title>
+  </head>
+  <style>
+    .title {
+      color: palevioletred;
+    }
+  </style>
+  <body>
+    <center><h1 class="title">CALCULANDO MEU IMC</h1></center>
+    <center>
+      <script>
+        function mostra(valueVariavelQualquer) {
+            document.write(valueVariavelQualquer)
+            pularLinha();
+        }
+
+        function pularLinha() {
+            document.write('<br>')
+        }
+
+              let peso = 58;
+              let altura = 1.55;
+              var imc = Math.round( peso / (altura * altura)) ;
+
+              if(imc <= 18.5 ) {
+                  mostra("Seu IMC é: " + imc + " <br> Seu peso está ABAIXO do ideal para sua altura.")
+              }else if (imc >= 18.6 &&  imc <= 24.9) {
+                  mostra("Seu IMC é: " + imc + " <br> Seu peso está NORMAL e ideal para sua altura.")
+              }else {
+                  mostra("Seu IMC é: " + imc + " <br> Seu peso está ACIMA do ideal para sua altura.")
+              }
+      </script>
+    </center>
+  </body>
+</html>

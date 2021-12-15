@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outra forma de repetir</title>
+  </head>
+  <body>
+    <script>
+      function mostra(frase) {
+        document.write(frase);
+        pularLinha();
+      }
+
+      function pularLinha() {
+        document.write("<br>");
+      }
+
+      var tabuada = 100;
+      var multiplicador = 1;
+
+      while (multiplicador <= 10) {
+        mostra(tabuada + ' X ' + multiplicador + ' = ' +  (tabuada * multiplicador));
+        multiplicador = multiplicador + 1;
+      }
+    </script>
+  </body>
+</html>

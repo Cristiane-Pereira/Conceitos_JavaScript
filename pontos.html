@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos de Time</title>
+</head>
+<body>
+    <script>
+          function mostra(frase) {
+                document.write(frase)
+                pularLinha();
+            }
+
+            function pularLinha() {
+                document.write('<br>')
+            }
+
+            var vitorias = parseInt(prompt("Informe o seu número de vitórias: "));
+            var empates = parseInt(prompt("Informe o número de empates: "));
+            var ponto_fixo = 48;
+            var pontos = (vitorias * 3 ) + empates;
+
+            if(pontos > ponto_fixo) {
+                mostra("Os pontos do seu time é: " + pontos);
+                mostra("Seu Time esta melhor que ano passado.");
+            }else if (pontos < ponto_fixo) {
+                mostra("Os pontos do seu time é: " + pontos);
+                mostra("Seu time esta pior que o ano passado.");
+            }else if (pontos == ponto_fixo) {
+                mostra("Os pontos do seu time é: " + pontos);
+                mostra("Seu time esta igual ao ano passado.");
+            }
+            
+           
+            
+
+        
+    </script>
+    
+</body>
+</html>

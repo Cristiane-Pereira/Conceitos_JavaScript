@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função com Parametro</title>
+</head>
+<body>
+    <script>
+        function mostra(valueVariavelQualquer) {
+            document.write(valueVariavelQualquer)
+            pularLinha();
+        }
+
+        function pularLinha() {
+            document.write('<br>')
+        }
+
+        let nome = "Cristiane";
+        let idade = (11 + 20);
+        let profissao = "Programação";
+
+        mostra("Meu nome é: " + nome + ".");
+
+        mostra("tenho " + idade + " anos" + ".")
+     
+        mostra("Amo trabalhar com " + profissao + ".");
+    </script>
+</body>
+</html>
